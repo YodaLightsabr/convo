@@ -1,0 +1,15 @@
+{
+  "name": "@gptfree/convo",
+  "version": "1.0.0",
+  "description": "Conversations API that can be used anywhere",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
+}
