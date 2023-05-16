@@ -41,8 +41,8 @@ export class Conversation {
         return response;
     }
 
-    static async create (message) {
-        const { response, conversationId } = await fetch("https://gptfree.top/conversations/create", {
+    static async create (message, endpoint = null) {
+        const { response, conversationId } = await fetch(endpoint ?? "https://gptfree.top/conversations/create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -62,6 +62,8 @@ export class Conversation {
                 text: response
             }
         ], conversationId);
+
+        this.endpoint = endpoint;
 
         return conversation;
     }
