@@ -22,7 +22,7 @@ export class Conversation {
             text: message
         });
 
-        const { response } = await fetch("https://gptfree.top/conversations/reply", {
+        const { response } = await fetch(this.endpoint ?? "https://gptfree.top/conversations/reply", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
