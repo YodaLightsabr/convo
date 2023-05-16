@@ -1,6 +1,6 @@
 {
   "name": "@gptfree/convo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Conversations API that can be used anywhere",
   "main": "index.js",
   "scripts": {
